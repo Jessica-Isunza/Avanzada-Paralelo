@@ -1,9 +1,0 @@
-﻿  Compiling CUDA source file kernel.cu...
-  
-  C:\Users\CIAC\Downloads\2do parcial\gpu_sudoku_solver\gpu_sudoku_solver>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o "C:\Users\CIAC\Downloads\2do parcial\gpu_sudoku_solver\gpu_sudoku_solver\x64\Debug\kernel.cu.obj" "C:\Users\CIAC\Downloads\2do parcial\gpu_sudoku_solver\gpu_sudoku_solver\kernel.cu" 
-CUDACOMPILE : ptxas warning : Stack size for entry function '_Z19solve_sudoku_kernelPcPb' cannot be statically determined
-  kernel.cu
-  tmpxft_000066d0_00000000-7_kernel.cudafe1.cpp
-     Creating library C:\Users\CIAC\Downloads\2do parcial\gpu_sudoku_solver\x64\Debug\gpu_sudoku_solver.lib and object C:\Users\CIAC\Downloads\2do parcial\gpu_sudoku_solver\x64\Debug\gpu_sudoku_solver.exp
-LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
-  gpu_sudoku_solver.vcxproj -> C:\Users\CIAC\Downloads\2do parcial\gpu_sudoku_solver\x64\Debug\gpu_sudoku_solver.exe
