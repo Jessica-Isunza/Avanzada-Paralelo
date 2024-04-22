@@ -1,0 +1,13 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\CIAC\Downloads\2do parcial\cpu_sudoku_solver\cpu_sudoku_solver>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o "C:\Users\CIAC\Downloads\2do parcial\cpu_sudoku_solver\cpu_sudoku_solver\x64\Debug\kernel.cu.obj" "C:\Users\CIAC\Downloads\2do parcial\cpu_sudoku_solver\cpu_sudoku_solver\kernel.cu" 
+C:\Users\CIAC\Downloads\2do parcial\cpu_sudoku_solver\cpu_sudoku_solver\kernel.cu(71): warning #177-D: variable "tid" was declared but never referenced
+        int tid = blockIdx.x * blockDim.x + threadIdx.x;
+            ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+CUDACOMPILE : ptxas warning : Stack size for entry function '_Z13sudoku_kernelPcPb' cannot be statically determined
+  kernel.cu
+  tmpxft_00004f40_00000000-7_kernel.cudafe1.cpp
+  cpu_sudoku_solver.vcxproj -> C:\Users\CIAC\Downloads\2do parcial\cpu_sudoku_solver\x64\Debug\cpu_sudoku_solver.exe
